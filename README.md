@@ -57,6 +57,8 @@ Clone this repository to your desired folder:
 
 ## 👥 Authors <a name="authors"></a>
 
+Original design idea byCindy Shin(https://www.behance.net/adagio07)
+
 👤 Zin Theint
 
 - GitHub: [@githubhandle](https://github.com/mioOleen)
