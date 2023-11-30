@@ -1,0 +1,435 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main: #272a31;
+  --dec: #ec5242;
+  --txt: #d3d3d3;
+}
+
+li,
+a {
+  cursor: pointer;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.desktopNavbar {
+  display: none;
+}
+
+#navBarSection {
+  display: none;
+}
+
+#mobileMenu {
+  display: block;
+  padding: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#cross {
+  position: absolute;
+  display: none;
+  font-weight: 600;
+  z-index: 20;
+  cursor: pointer;
+  padding: 10px;
+  color: var(--txt);
+  font-size: 40px;
+  margin-top: -20px;
+}
+
+#headSection {
+  background-image: url(./img/headerBg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+#menuBar {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  height: 100vh;
+  z-index: 1;
+  background-color: var(--main);
+  padding-top: 40px;
+}
+
+#menuBar a {
+  color: var(--txt);
+}
+
+#menuBar li {
+  list-style: none;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 35%;
+  margin-left: 50px;
+  transition: all 0.5s;
+  color: var(--txt);
+}
+
+#menuBar li:hover {
+  border-bottom: 1px solid var(--dec);
+  width: 35%;
+  padding-left: 55px;
+}
+
+.firstPara h3 {
+  color: var(--dec);
+}
+
+.firstPara h1 {
+  /* background: linear-gradient(to bottom, orange, red, gold);
+  -webkit-background-clip:text;
+  color: transparent;
+  background-clip:text; */
+  color: #e6431e;
+  font-size: 2rem;
+}
+
+.bgColor {
+  max-width: 700px;
+  margin-top: 30px;
+  color: var(--main);
+  background-color: var(--txt);
+  border: 2px solid #fff;
+  padding: 5px 2px 5px 10px;
+}
+
+
+
+/* Main Program  */
+
+#mainProgram {
+  background-image: url(img/Pure\ Wool\ Worsted\ Dark\ Grey\ _\ Luxury\ Bespoke\ Fabrics.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.partner hr,
+#mainProgram hr,
+.underline {
+  height: 3px;
+  background-color: var(--dec);
+  width: 7%;
+  opacity: 1;
+  margin: 10px auto;
+  border: none;
+}
+
+.partner h2 {
+  color: var(--txt);
+}
+
+#mainProgram h2 {
+  color: var(--txt);
+}
+
+.program {
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  border-radius: 3px;
+  padding: 30px 20px;
+  margin-bottom: 5px;
+}
+
+.gap {
+  column-gap: 5px;
+  padding: 10px;
+}
+
+.program span {
+  color: var(--dec);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.program i {
+  font-size: 2rem;
+  color: var(--txt);
+}
+
+.program p {
+  color: var(--txt);
+}
+
+.joinBtn {
+  background-color: var(--dec);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  font-size: 1.1rem;
+}
+
+.joinBtn:hover {
+  background-color: var(--txt);
+  color: var(--dec);
+}
+
+.seeBtn {
+  display: none;
+}
+
+.icon {
+  width: 10%;
+}
+
+/* Speakers */
+
+.line {
+  height: 1px;
+  border-width: 0;
+  background-color: var(--main);
+  width: 6%;
+  opacity: 0.8;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+#seeMoreBtn,
+#seeLessBtn {
+  width: 95%;
+  border: 1px solid gray;
+  padding: 10px;
+  margin: 3em auto;
+}
+
+.featured-speakers-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.speaker-card {
+  width: 95%;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+}
+
+.img-group {
+  width: 20%;
+}
+
+.speaker-info {
+  width: 80%;
+  padding-left: 40px;
+}
+
+.speaker-info h3 {
+  font-size: 1em;
+}
+
+.speaker-info i {
+  color: var(--dec);
+}
+
+.speakerImg {
+  width: 20%;
+  position: absolute;
+  left: 2%;
+  top: 8%;
+  z-index: 1;
+}
+
+.bgroundImage {
+  width: 30%;
+  position: relative;
+}
+
+.partner {
+  background-color: var(--main);
+  padding-bottom: 3em;
+}
+
+.partner section {
+  color: var(--txt);
+  opacity: 0.6;
+}
+
+.ccfooter {
+  width: 35%;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-size: 1.7em;
+}
+
+.ccfooter img {
+  width: 15%;
+}
+
+.ccfooter p {
+  line-height: 0.8;
+  margin: 0;
+}
+
+.ccparagraph {
+  width: 60%;
+  color: var(--main);
+  opacity: 0.8;
+}
+
+@media only screen and (min-width: 768px) {
+  .desktopNavbar {
+    display: block;
+    color: var(--txt);
+    background-color: var(--main);
+    padding-right: 100px;
+    padding-left: 130px;
+  }
+
+  .menuIcon {
+    display: none;
+  }
+
+  #menuBar {
+    display: none;
+    position: absolute;
+    width: 0;
+    top: 0;
+    height: 0;
+    z-index: 0;
+    transition: none;
+  }
+
+  #menuBar li {
+    display: none;
+  }
+
+  #navBarSection {
+    display: block;
+    border-bottom: 1px solid var(--txt);
+    padding-right: 100px;
+    padding-left: 120px;
+    padding-top: 10px;
+  }
+
+  .logoDiv img {
+    width: 15%;
+  }
+
+  .logoDiv a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: darkslategrey;
+    padding: 10px 6px;
+    text-decoration: none;
+  }
+
+  #navBarSection li {
+    padding: 10px 6px;
+  }
+
+  #navBarSection li:first-child a {
+    color: #ec5242;
+    text-decoration: none;
+  }
+
+  #navBarSection li:last-child {
+    border: 1px solid #ec5242;
+  }
+
+  .gap {
+    display: flex;
+    justify-content: center;
+  }
+
+  .program {
+    display: flex;
+    transition: all 0.5s ease-in-out;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .program:hover {
+    border: 1px solid var(--txt);
+  }
+
+  .program i {
+    font-size: 4rem;
+  }
+
+  #headSection {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 100px;
+    padding-left: 120px;
+  }
+
+  #headSection h1 {
+    font-size: 5rem;
+  }
+
+  .icon {
+    width: 5%;
+  }
+
+  .joinBtn {
+    display: none;
+  }
+
+  .seeBtn {
+    font-size: 1.2rem;
+    display: block;
+    color: var(--txt);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .seeBtn:hover {
+    color: var(--dec);
+  }
+
+  .speaker {
+    padding: 0 4rem;
+  }
+
+  .footerTxt {
+    padding: 3rem 5rem;
+  }
+
+  .featured-speakers-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .img-group {
+    width: 30%;
+  }
+
+  .speaker-info {
+    width: 70%;
+    padding-top: 20px;
+    padding-left: 50px;
+    height: auto;
+  }
+
+  .speakerImg {
+    width: 30%;
+    position: absolute;
+    left: 1em;
+    top: 1.5em;
+    z-index: 1;
+  }
+
+  .bgroundImage {
+    width: 40%;
+    position: relative;
+  }
+}

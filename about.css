@@ -1,0 +1,219 @@
+#aboutPage {
+  padding: 1em 0;
+  background-image: url(./img/aboutBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+hr {
+  height: 2px;
+  background-color: var(--dec);
+  color: var(--dec);
+  width: 3%;
+  opacity: 0.6;
+  margin: 0 auto 50px auto;
+}
+
+.contactLetter {
+  color: gray;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.sectionTitle {
+  width: 100%;
+  color: var(--dec);
+  font-size: 2rem;
+}
+
+.helloText {
+  font-size: 1.3rem;
+  color: var(--dec);
+  margin-bottom: 0;
+  margin-top: 2em;
+}
+
+.endLine {
+  color: gray;
+  background-color: gray;
+  height: 1px;
+  opacity: 0.5;
+  width: unset;
+}
+
+#firstPara {
+  width: 90%;
+  background-color: #fff;
+  color: gray;
+}
+
+#secondPara {
+  width: 100%;
+  color: rgb(185, 126, 126);
+}
+
+#copyright {
+  display: none;
+}
+
+.eachImg {
+  position: relative;
+  object-fit: cover;
+  margin: 1em;
+  width: 100%;
+}
+
+.imgOverlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgOverlay img {
+  width: 60%;
+  object-fit: cover;
+}
+
+.overlayTxt {
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  top: 0;
+  left: 20%;
+  position: absolute;
+  color: var(--txt);
+  background-color: rgba(245, 87, 25, 0.541);
+}
+
+.logoImg {
+  margin: auto;
+  width: 70%;
+  border: 1px solid lightgray;
+}
+
+.logoImg img {
+  width: 30%;
+  object-fit: cover;
+}
+
+#copyrightMobile {
+  display: flex;
+}
+
+.logoCC {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  color: var(--txt);
+  font-weight: bold;
+  font-size: 1.7em;
+}
+
+.logoCCmobile {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  color: var(--txt);
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.logoCC img {
+  width: 10%;
+}
+
+.logoCCmobile img {
+  width: 20%;
+}
+
+.logoCC p {
+  line-height: 0.8;
+  color: var(--txt);
+}
+
+.logoCCmobile p {
+  line-height: 0.8;
+  color: var(--main);
+}
+
+.logoParagraph {
+  width: 60%;
+  color: var(--txt);
+  opacity: 0.8;
+}
+
+.logoParagraphMobile {
+  width: 60%;
+  color: var(--main);
+  opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+  #aboutPage {
+    padding: 3rem 5rem;
+  }
+
+  .helloText {
+    display: none;
+  }
+
+  .sectionTitle {
+    margin: auto;
+    width: 60%;
+    color: var(--dec);
+    font-size: 3rem;
+  }
+
+  #firstPara {
+    width: 70%;
+    background-color: #fff;
+    color: gray;
+  }
+
+  #secondPara {
+    width: 70%;
+    color: gray;
+  }
+
+  .imgOverlay {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .imgOverlay img {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+  }
+
+  .overlayTxt {
+    width: 60%;
+    height: 100%;
+    top: 0;
+    left: 20%;
+    position: absolute;
+    color: var(--txt);
+    background-color: rgba(245, 87, 25, 0.541);
+  }
+
+  .logoImg {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .partner {
+    display: none;
+  }
+
+  #copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #copyrightMobile {
+    display: none;
+  }
+}
