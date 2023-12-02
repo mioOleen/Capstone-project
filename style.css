@@ -266,11 +266,11 @@ body {
   font-weight: bold;
   display: flex;
   align-items: center;
-  font-size: 1.7em;
+  font-size: 1.2em;
 }
 
 .ccfooter img {
-  width: 15%;
+  width: 17%;
 }
 
 .ccfooter p {
@@ -431,5 +431,14 @@ body {
   .bgroundImage {
     width: 40%;
     position: relative;
+  }
+
+  .ccfooter {
+    width: 40%;
+    font-size: 1.6em;
+  }
+
+  .ccfooter img {
+    width: 13%;
   }
 }
