@@ -62,23 +62,23 @@ const featuredSpeakersContainer = document.getElementById('featuredSpeakers');
 
 function createSpeakerCard(speaker) {
   const speakerCard = document.createElement('div');
-  speakerCard.className = 'speaker-card';
+  speakerCard.classList.add('speaker-card');
 
   const divImg = document.createElement('div');
-  divImg.className = 'img-group';
+  divImg.classList.add('img-group');
 
   const bgimage = document.createElement('img');
   bgimage.src = bgImg;
-  bgimage.className = 'bgroundImage';
+  bgimage.classList.add('bgroundImage');
   divImg.append(bgimage);
 
   const image = document.createElement('img');
   image.src = speaker.profile;
-  image.className = 'speakerImg';
+  image.classList.add('speakerImg');
   divImg.append(image);
 
   const div = document.createElement('div');
-  div.className = 'speaker-info';
+  div.classList.add('speaker-info');
 
   const name = document.createElement('h4');
   name.textContent = speaker.speakerName;
@@ -89,7 +89,7 @@ function createSpeakerCard(speaker) {
   div.append(title);
 
   const hr = document.createElement('hr');
-  hr.className = 'line';
+  hr.classList.add('line');
   div.append(hr);
 
   const info = document.createElement('p');
@@ -159,7 +159,7 @@ function renderDesktopSpeakers() {
 }
 
 function showMsg() {
-  if (window.innerWidth <= 768) {
+  if (window.innerWidth <= 767) {
     showMoreSpeakers();
   } else if (window.innerWidth >= 768) {
     renderDesktopSpeakers();
