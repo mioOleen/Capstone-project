@@ -316,7 +316,6 @@ body {
     padding-left: 120px;
     padding-top: 10px;
     justify-content: space-between;
-
   }
 
   .logoDiv {
@@ -328,9 +327,11 @@ body {
   .logoDiv img {
     width: 100%;
   }
-.navigation{
-  width: 80%;
-}
+
+  .navigation {
+    width: 80%;
+  }
+
   .logoDiv a {
     font-size: 1.2rem;
     font-weight: bold;
