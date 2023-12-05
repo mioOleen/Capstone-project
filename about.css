@@ -86,6 +86,21 @@ hr {
   background-color: rgba(245, 87, 25, 0.541);
 }
 
+.aboutPartner {
+  display: block;
+  background-color: var(--main);
+  padding-bottom: 3em;
+}
+
+.aboutPartner h2 {
+  color: var(--txt);
+}
+
+.aboutPartner section {
+  color: var(--txt);
+  opacity: 0.6;
+}
+
 .logoImg {
   margin: auto;
   width: 70%;
@@ -204,10 +219,6 @@ hr {
     margin-right: auto;
   }
 
-  .partner {
-    display: none;
-  }
-
   #copyright {
     display: flex;
     justify-content: center;
@@ -215,6 +226,10 @@ hr {
   }
 
   #copyrightMobile {
+    display: none;
+  }
+
+  .aboutPartner {
     display: none;
   }
 }
