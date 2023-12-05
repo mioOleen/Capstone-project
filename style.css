@@ -318,8 +318,8 @@ body {
     justify-content: space-between;
   }
 
-  .logoDiv{
-    width:10%;
+  .logoDiv {
+    width: 10%;
     padding: 0;
     margin: 0;
   }
@@ -327,9 +327,11 @@ body {
   .logoDiv img {
     width: 100%;
   }
-.navigation{
-  width: 80%;
-}
+
+  .navigation {
+    width: 80%;
+  }
+
   .logoDiv a {
     font-size: 1.2rem;
     font-weight: bold;
