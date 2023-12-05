@@ -310,7 +310,7 @@ body {
   }
 
   #navBarSection {
-    display: block;
+    display: flex;
     border-bottom: 1px solid var(--txt);
     padding-right: 100px;
     padding-left: 120px;
