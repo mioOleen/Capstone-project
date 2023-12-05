@@ -70,7 +70,7 @@ Original design idea byCindy Shin(https://www.behance.net/adagio07)
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://miooleen.github.io/)
+- [Live Demo Link](https://miooleen.github.io/Capstone-project/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
