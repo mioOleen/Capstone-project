@@ -15,7 +15,7 @@ hr {
 }
 
 .contactLetter {
-  color: gray;
+  color: rgb(138, 137, 137);
   max-width: 80%;
   margin: auto;
   margin-top: 60px;
@@ -86,6 +86,21 @@ hr {
   background-color: rgba(245, 87, 25, 0.541);
 }
 
+.aboutPartner {
+  display: block;
+  background-color: var(--main);
+  padding-bottom: 3em;
+}
+
+.aboutPartner h2 {
+  color: var(--txt);
+}
+
+.aboutPartner section {
+  color: var(--txt);
+  opacity: 0.6;
+}
+
 .logoImg {
   margin: auto;
   width: 70%;
@@ -93,8 +108,9 @@ hr {
 }
 
 .logoImg img {
-  width: 30%;
+  width: 70%;
   object-fit: cover;
+  padding: 10px;
 }
 
 #copyrightMobile {
@@ -203,10 +219,6 @@ hr {
     margin-right: auto;
   }
 
-  .partner {
-    display: none;
-  }
-
   #copyright {
     display: flex;
     justify-content: center;
@@ -214,6 +226,10 @@ hr {
   }
 
   #copyrightMobile {
+    display: none;
+  }
+
+  .aboutPartner {
     display: none;
   }
 }
