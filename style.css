@@ -92,6 +92,10 @@ body {
 }
 
 .firstPara h1 {
+  /* background: linear-gradient(to bottom, orange, red, gold);
+  -webkit-background-clip:text;
+  color: transparent;
+  background-clip:text; */
   color: #e6431e;
   font-size: 2rem;
 }
@@ -106,6 +110,7 @@ body {
 }
 
 /* Main Program  */
+
 #mainProgram {
   background-image: url(img/Pure\ Wool\ Worsted\ Dark\ Grey\ _\ Luxury\ Bespoke\ Fabrics.jpg);
   background-repeat: no-repeat;
@@ -137,12 +142,6 @@ body {
   border-radius: 3px;
   padding: 30px 20px;
   margin-bottom: 5px;
-  transition: all 0.1s ease-in-out;
-  cursor: pointer;
-}
-
-.program:hover {
-  box-shadow: 3px 3px 3px orange, -3px -3px 3px red;
 }
 
 .gap {
@@ -242,12 +241,11 @@ body {
   left: 2%;
   top: 8%;
   z-index: 1;
-  aspect-ratio: 1/1;
 }
 
 .bgroundImage {
   width: 30%;
-  aspect-ratio: 1/1;
+  position: relative;
 }
 
 .partner {
@@ -266,11 +264,11 @@ body {
   font-weight: bold;
   display: flex;
   align-items: center;
-  font-size: 1.2em;
+  font-size: 1.7em;
 }
 
 .ccfooter img {
-  width: 17%;
+  width: 15%;
 }
 
 .ccfooter p {
@@ -312,23 +310,15 @@ body {
   }
 
   #navBarSection {
-    display: flex;
+    display: block;
     border-bottom: 1px solid var(--txt);
     padding-right: 100px;
     padding-left: 120px;
     padding-top: 10px;
   }
 
-  .logoDiv {
-    width: 10%;
-  }
-
   .logoDiv img {
-    width: 100%;
-  }
-
-  .navigation {
-    width: 90%;
+    width: 15%;
   }
 
   .logoDiv a {
@@ -359,15 +349,13 @@ body {
 
   .program {
     display: flex;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.5s ease-in-out;
     flex-direction: column;
     cursor: pointer;
-    padding: 20px;
-    margin: 0;
   }
 
   .program:hover {
-    box-shadow: 5px 5px 5px red, -5px -5px 5px orange;
+    border: 1px solid var(--txt);
   }
 
   .program i {
@@ -416,7 +404,7 @@ body {
   .featured-speakers-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    gap: 40px;
   }
 
   .img-group {
@@ -432,22 +420,14 @@ body {
 
   .speakerImg {
     width: 30%;
-    aspect-ratio: 1/1;
+    position: absolute;
+    left: 1em;
+    top: 1.5em;
+    z-index: 1;
   }
 
   .bgroundImage {
-    width: 10%;
-    aspect-ratio: 1/1;
-    left: -10px;
-    position: absolute;
-  }
-
-  .ccfooter {
     width: 40%;
-    font-size: 1.6em;
-  }
-
-  .ccfooter img {
-    width: 13%;
+    position: relative;
   }
 }
