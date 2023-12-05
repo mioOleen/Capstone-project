@@ -92,10 +92,6 @@ body {
 }
 
 .firstPara h1 {
-  /* background: linear-gradient(to bottom, orange, red, gold);
-  -webkit-background-clip:text;
-  color: transparent;
-  background-clip:text; */
   color: #e6431e;
   font-size: 2rem;
 }
