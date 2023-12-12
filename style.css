@@ -249,37 +249,12 @@ body {
 }
 
 .partner {
-  background-color: var(--main);
-  padding-bottom: 3em;
+  display: none;
 }
 
-.partner section {
-  color: var(--txt);
-  opacity: 0.6;
-}
-
-.ccfooter {
-  width: 35%;
-  color: black;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  font-size: 1.7em;
-}
-
-.ccfooter img {
-  width: 15%;
-}
-
-.ccfooter p {
-  line-height: 0.8;
-  margin: 0;
-}
-
+.ccfooter,
 .ccparagraph {
-  width: 60%;
-  color: var(--main);
-  opacity: 0.8;
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -408,8 +383,46 @@ body {
     padding: 0 4rem;
   }
 
+  .partner {
+    display: block;
+    background-color: var(--main);
+    padding-bottom: 3em;
+  }
+
+  .partner section {
+    color: var(--txt);
+    opacity: 0.6;
+  }
+
   .footerTxt {
-    padding: 3rem 5rem;
+    display: block;
+
+    /* padding: 3rem 5rem; */
+  }
+
+  .ccfooter {
+    width: 35%;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 1.7em;
+  }
+
+  .ccfooter img {
+    width: 15%;
+  }
+
+  .ccfooter p {
+    line-height: 0.8;
+    margin: 0;
+  }
+
+  .ccparagraph {
+    display: block;
+    width: 60%;
+    color: var(--main);
+    opacity: 0.8;
   }
 
   .featured-speakers-container {
